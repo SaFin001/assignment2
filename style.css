@@ -30,6 +30,13 @@ main{
     font-size: 64px;
     line-height: 40px;
 }
+.button{
+    background-color: #E02C6D;
+    width: 168px;
+    height: 44px;
+    text-align: center;
+    padding-top: 15px;
+}
 .banner{
     /* background-color: #2D25A0; */
     position: absolute;
@@ -74,8 +81,8 @@ main{
           Footer
        ------------------  */
        .footer{
-           position: absolute;
-           bottom: 0%;
+           /* position: absolute;
+           bottom: 0%; */
            display: grid;
            grid-template-rows: repeat(2, 1fr);
            /* display: flex;
@@ -83,6 +90,7 @@ main{
            /* justify-items: center; */
            align-items: center;
            margin-left: 475px;
+           margin-right: 700px;
            /* border: 2px solid black; */
        }
        .logo img{
@@ -90,8 +98,6 @@ main{
         height: 110px;
        }
        .icons i{
-           width: 32px;
-           height: 32px;
            justify-self: center;
        }
        .icons{
