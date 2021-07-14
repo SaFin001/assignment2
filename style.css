@@ -1,6 +1,8 @@
 body{
     font-family: 'Poppins', sans-serif;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     /* background-color: #000000; */
 }
 main{
@@ -77,20 +79,85 @@ main{
     .player img{
         width: 100%;
     }
+    /* ----------------------
+             Bonus Part 1
+     -------------------- */
+    .media{
+        position: absolute;
+        bottom: 688px;
+        left: 400px;
+    }
+    /* ----------------------
+             Bonus Part 2
+     -------------------- */
+    .container{
+        position: absolute;
+        bottom: 170px;
+        width: 1440px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 30px;
+    }
+    .container .players{
+        position: relative;
+        max-width: 300px;
+        height: 290px;
+        margin: 30px 10px;
+        padding: 20px 15px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+        transition: 0.3s ease-in-out;
+    }
+    .container .players .image-box{
+        position: relative;
+        width: 260px;
+        height: 260px;
+        top: 60px;
+        left: 20px;
+        z-index: 1;
+        box-shadow:  0 5px 20px rgba(0, 0, 0, 0.3);
+    }
+    .container .players .image-box img{
+        max-width: 100%;
+        border-radius: 5px;
+    }
+.container .players:hover {
+    height: 420px;
+}
+.container .players .content{
+    position: relative;
+    margin-top: -140px;
+    padding: 10ox 15px;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s ease-in-out
+}
+.container .players:hover .content{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+
     /* ------------------
           Footer
        ------------------  */
        .footer{
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
            /* position: absolute;
            bottom: 0%; */
-           display: grid;
-           grid-template-rows: repeat(2, 1fr);
+           
            /* display: flex;
            flex-direction: column; */
            /* justify-items: center; */
-           align-items: center;
+           /* align-items: center;
            margin-left: 475px;
-           margin-right: 700px;
+           margin-right: 700px; */
            /* border: 2px solid black; */
        }
        .logo img{
@@ -106,3 +173,4 @@ main{
       .copyright{
           text-align: center;
       }
+     
